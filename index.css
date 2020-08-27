@@ -1,0 +1,64 @@
+:root {
+  --primary-font-family: 'Roboto', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(42, 42, 46, 1);
+  margin: 0;
+}
+
+.app-header {
+  height: 72px;
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.app-name {
+  color: white;
+  text-transform: uppercase;
+  font-family: var(--primary-font-family);
+}
+
+.app-logo {
+  height: 44px;
+  width: 36px;
+  margin-right: 16px;
+}
+
+main {
+  display: flex;
+  height: calc(100% - 72px);
+  width: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+aside {
+  height: 100%;
+  width: 370px;
+}
+
+.housemates {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  margin-left: 32px;
+  grid-template-columns: repeat(3,1fr);
+  gap: 32px;
+}
+
+aside, .housemate {
+  background-color: rgba(255,255,255,5%);
+  box-shadow: rgba(12, 12, 13, 0.2) 0px 1px 8px 0px;
+  border-radius: 4px;
+}
+
